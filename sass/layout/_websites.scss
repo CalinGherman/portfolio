@@ -1,0 +1,160 @@
+.websites {
+    display: grid;
+    grid-column: center-start/center-end;
+    grid-template-rows: repeat(2, min-content);
+    margin:10rem 0 10rem  0;
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 4rem;
+        // border: 1px solid red;
+    }
+
+    &__website {
+        display: grid;
+        grid-template-rows: 1fr min-content;
+       
+        text-align: center;
+        &-img1{
+            background-image: url(/img/atv-website-size.png);
+        }
+        &-img2{
+            background-image: url(/img/restaurant.png);
+        }
+        &-img3{
+            background-image: url(/img/naturos.png);
+        }
+        &-img4{
+            background-image: url(/img/nexter.png);
+        }
+        &-img5{
+            background-image: url(/img/trillo.png);
+        }
+        &-img6{
+            background-image: url(/img/dicegame.png);
+        }
+        &-img7{
+            background-image: url(/img/colorgame.png);
+        }
+
+        &-img {
+            height: 25rem;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 3px;  
+        }
+
+        &-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0, 0.5);
+            opacity: 0;
+            transition: all .5s;
+
+        }
+
+        &-overlay:hover {
+            opacity: 1;
+        }
+
+        &-overlay:hover > &-text {
+            transform: translateY(0);
+        }
+
+
+        &-text {
+            font-weight: 700;
+            font-size: 1.9rem;
+            color: white;
+            transform: translateY(3rem);
+            transition: all .5s;
+        }
+
+    
+
+        &-link,
+        &-link:active,
+        &-link:link {
+            display: block;
+            text-decoration: none;
+            color: $color-gray-light-1;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            transition: all .2s;
+        }
+
+        &-link:hover {
+            transform: scale(1.1);
+        }
+
+    }
+
+    
+
+    // &__website {
+    //     // display: grid;
+    //     // // grid-template-rows: 1fr min-content;
+    //     background-image: url(/img/atv-website-size.png);
+    //     background-position: center;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     height: 25rem;
+    //     position: relative;
+    //     border: 3px solid red;
+    //     text-align: center;
+
+    //     &-overlay {
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         // border: 2px solid blue;
+    //         display: flex;
+    //         align-items: center;
+    //         text-align: center;
+
+    //         background: rgba( 0, 0, 0, 0.6); 
+    //         opacity: 0;
+    //         transition: all .5s;
+    //     }
+
+    //     &-overlay:hover {
+    //         opacity: 1;
+    //     }
+
+    //     &-overlay:hover > &-text {
+    //         transform: translateY(0);
+    //     }
+
+  
+    //     &-text {
+    //         color: white;
+    //         font-size: 2rem;
+    //         font-weight: 800;
+    //         // border: 3px solid red;
+    //         transform: translateY(4rem);
+    //         transition: all .5s;
+           
+    //     }
+
+    //     &-link {
+    //        position: absolute;
+    //     }
+    // }
+
+}
+
+
+
+

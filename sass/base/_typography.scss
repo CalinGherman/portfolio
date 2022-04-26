@@ -1,0 +1,55 @@
+
+body {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-gray-light-1;
+}
+
+//Header Typography
+
+.header__intro--title {
+    font-family: $font-title;
+    color: $color-gray-light-1;
+}
+.header__intro--p {
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: $color-gray-light-2;
+
+}
+
+
+//About Typography
+
+.about__title {
+    font-weight: 900;
+    font-size: 2.9rem;
+    margin-left: 2rem;
+    color: $color-gray-light-1;
+}
+
+.about__text {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: $color-gray-light-2;
+
+}
+
+
+// Websites Typography
+
+.websites{
+
+    &__title{
+        font-weight: 800;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 3rem ;
+        padding-bottom:7rem ;
+        color: $color-gray-light-1;
+
+    }
+}
+

@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after{
+  
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+    @media only screen and(max-width:$bg-largest) {
+        font-size: 50%;
+    }
+}
+
+// working on revealin sections as scrolling
+
+.section {
+    transition: transform 1s, opacity 1s;
+   
+}
+
+.section--hidden {
+opacity: 0;
+transform: translateY(15rem);
+}
+
+.container {
+    background-image: linear-gradient( to bottom, rgba($color-primary, .8), rgba($color-primary-2, .8));
+}
+
+

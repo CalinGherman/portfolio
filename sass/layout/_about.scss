@@ -1,0 +1,29 @@
+.about{
+    display: grid;
+    grid-column: center-start/center-end;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+    align-content: center;
+
+    @media only screen and(max-width: $bg-medium ){
+        grid-template-columns: 1fr;
+    };
+
+    &__section {
+        padding: 4rem 6rem;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 2.9rem;
+        margin-left: 2rem;
+
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+
+}
